@@ -1,0 +1,11 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Choose an Event to propose a price{% endblock %}
+
+{% block body %}
+    {% for ticket in tickets %}
+        <li>
+            <a href="#">{{ ticket.eventName }}</a>
+        </li>
+    {% endfor %}
+{% endblock %}
